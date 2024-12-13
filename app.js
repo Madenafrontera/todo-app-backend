@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Ruta base
-app.use('/todos', todoRoutes);  // Asegúrate de que esta ruta esté configurada correctamente
+app.use('/todos', todoRoutes);
 
 // Conexión a MongoDB
 mongoose.connect('mongodb://localhost/todolist', { useNewUrlParser: true, useUnifiedTopology: true })
